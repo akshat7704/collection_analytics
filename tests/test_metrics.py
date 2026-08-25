@@ -1,9 +1,9 @@
 import numpy as np
+import pandas as pd
 from src.metrics import monthly_scorecard
 
 
 def test_monthly_scorecard_known_outputs():
-    import pandas as pd
     accounts = pd.DataFrame({"account_id": ["a1", "a2"], "outstanding_amount": [100, 100]})
     targeting = pd.DataFrame({"account_id": ["a1", "a2"], "month": ["2026-01", "2026-01"]})
     calls = pd.DataFrame({"account_id": ["a1", "a2"], "call_status": ["ANSWERED", "NO_ANSWER"], "month": ["2026-01", "2026-01"]})
