@@ -376,14 +376,18 @@ elif nav_selection == "🎯 Driver & Channel Forensics":
     with t3:
         st.subheader("Calling Window Productivity")
         if not calling_time_df.empty:
+            hour_col = "call_hour_local" if "call_hour_local" in calling_time_df.columns else "calling_hour" if "calling_hour" in calling_time_df.columns else calling_time_df.columns[0]
+            rate_col = "contact_rate" if "contact_rate" in calling_time_df.columns else calling_time_df.columns[-1]
             fig_time = px.bar(
                 calling_time_df,
-                x="calling_hour",
-                y="contact_rate",
+                x=hour_col,
+                y=rate_col,
                 title="Contact Rate by Calling Hour (Local Time)",
+                labels={hour_col: "Calling Hour (Local)", rate_col: "Contact Rate"},
                 template="plotly_dark",
             )
             st.plotly_chart(fig_time, use_container_width=True)
+            st.dataframe(calling_time_df, use_container_width=True)
 
     with t4:
         st.subheader("Vendor Telephony Reliability")
@@ -400,22 +404,25 @@ elif nav_selection == "💡 ₹10 Cr Investment & ROI Simulator":
 
     if not investment_df.empty:
         st.subheader("Option Comparison Matrix")
-        st.dataframe(
-            investment_df.style.highlight_max(subset=["estimated_roi"], color="#065f46"),
-            use_container_width=True,
-        )
-
-        fig_inv = px.bar(
-            investment_df,
-            x="option",
-            y="estimated_roi",
-            color="estimated_roi",
-            title="Estimated ROI by Investment Option",
-            labels={"estimated_roi": "Estimated ROI (x)", "option": "Option"},
-            color_continuous_scale="Viridis",
-            template="plotly_dark",
-        )
-        st.plotly_chart(fig_inv, use_container_width=True)
+        roi_col = "roi" if "roi" in investment_df.columns else "estimated_roi" if "estimated_roi" in investment_df.columns else None
+        if roi_col:
+            st.dataframe(
+                investment_df.style.highlight_max(subset=[roi_col], color="#065f46"),
+                use_container_width=True,
+            )
+            fig_inv = px.bar(
+                investment_df,
+                x="option",
+                y=roi_col,
+                color=roi_col,
+                title="Estimated ROI by Investment Option",
+                labels={roi_col: "Estimated ROI (x)", "option": "Option"},
+                color_continuous_scale="Viridis",
+                template="plotly_dark",
+            )
+            st.plotly_chart(fig_inv, use_container_width=True)
+        else:
+            st.dataframe(investment_df, use_container_width=True)
 
     st.markdown("---")
     st.subheader("🎛️ Interactive Investment Scenario Simulator")
