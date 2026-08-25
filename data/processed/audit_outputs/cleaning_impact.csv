@@ -1,0 +1,3 @@
+dataset,rule,raw_rows,corrected_rows,rejected_rows,retained_rows,business_impact
+payments,successful payments only; exact/payment_id/payment_reference duplicates removed,25500,15348,10152,15348,"Recovery overstatement reduced by INR 191,803,695.83"
+all,raw files copied only; original source folder and data/raw files not modified,639185,639185,0,639185,Raw data preserved for auditability.

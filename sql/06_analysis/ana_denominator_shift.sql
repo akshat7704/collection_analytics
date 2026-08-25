@@ -1,0 +1,1 @@
+-- See outputs/tables/denominator_funnel.csv.

@@ -1,0 +1,1 @@
+-- See outputs/tables/campaign_scorecard.csv.

@@ -1,0 +1,1 @@
+-- Analytical grain: account-month collection episode. Built in Python as data/golden/analytical/fct_collection_episode.csv.

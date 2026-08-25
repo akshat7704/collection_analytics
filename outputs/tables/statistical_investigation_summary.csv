@@ -1,0 +1,8 @@
+question,result,evidence,classification,business_implication
+mix effects,Monthly recovery standardized to fixed outstanding-weighted risk mix,mix_standardized_recovery.csv,STRONG EVIDENCE,Compare aggregate and standardized trends before attributing change to operations.
+cohort effects,Recovery outcomes grouped by account opening cohort,cohort_recovery.csv,CORRELATION,Vintage composition may explain aggregate differences; cohorts are not randomized.
+selection bias,Targeted accounts differ from never-targeted accounts,targeting_gap.csv,CORRELATION,Targeting comparisons are not causal.
+survivorship bias,Full accounts denominator retained in monthly scorecard,monthly_scorecard.csv,FACT,Prevents disappearing-denominator improvement.
+Simpson's paradox,Segmented DPD/risk outputs produced for aggregate comparison,dpd_scorecard.csv/risk_scorecard.csv,HYPOTHESIS,Check segment and aggregate directions before claiming improvement.
+attribution-window bias,3/7/14/30 day sensitivity generated,attribution_window_sensitivity.csv,FACT,Channel credit changes with window.
+time-series effects,Partial latest month identified and excluded from executive conclusion,monthly_scorecard.csv,FACT,Avoids comparing incomplete month to complete prior month.

@@ -1,0 +1,1 @@
+-- Cohort proxy is based on account open month and recovery outcome in generated analytical tables.

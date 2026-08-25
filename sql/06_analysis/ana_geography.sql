@@ -1,0 +1,1 @@
+-- See outputs/tables/geography_scorecard.csv.

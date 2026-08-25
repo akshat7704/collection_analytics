@@ -1,0 +1,1 @@
+-- See outputs/tables/vendor_scorecard.csv.

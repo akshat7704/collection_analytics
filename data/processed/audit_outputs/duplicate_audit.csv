@@ -1,0 +1,18 @@
+dataset,exact_duplicate_rows,duplicate_id_rows,duplicate_ids_identical_business_rows,duplicate_ids_conflicting_rows,legitimate_repeated_events_note
+borrowers,1200,28151,96,28055,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+accounts,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+agents,0,30000,0,30000,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+agent_sessions,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+campaigns,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+daily_targeting,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+calls,2542,2700,2542,158,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+call_attempts,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+call_dispositions,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+whatsapp_events,1200,1200,1200,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+sms_events,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+field_visits,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+promises_to_pay,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+payments,972,1000,972,28,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+vendor_telephony,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+complaints,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.
+account_status_history,0,0,0,0,Event tables may repeat account/borrower by design; primary event IDs remain audited separately.

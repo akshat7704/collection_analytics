@@ -1,0 +1,1 @@
+Power BI Desktop is not available in this execution environment, so a binary `.pbix` could not be generated. The dashboard-ready tables are in `outputs/tables`, the metric dictionary is here, and `executive_dashboard.html` is the one-screen executive equivalent.

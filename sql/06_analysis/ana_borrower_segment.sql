@@ -1,0 +1,1 @@
+-- See outputs/tables/risk_scorecard.csv and loan_scorecard.csv.

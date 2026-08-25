@@ -1,0 +1,10 @@
+month,recovery_rate,targeted_accounts,eligible_accounts,targeted_share,method
+2025-12,0.0,0,30000,0.0,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-01,0.01722604940983275,5732,30000,0.19106666666666666,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-02,0.015200182480689349,5160,30000,0.172,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-03,0.016379952751771367,5666,30000,0.18886666666666665,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-04,0.014668412630783905,5585,30000,0.18616666666666667,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-05,0.014714479068182506,5800,30000,0.19333333333333333,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-06,0.013851444097474618,5535,30000,0.1845,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-07,0.014016691265905289,5666,30000,0.18886666666666665,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.
+2026-08,0.003550792549751064,1566,30000,0.0522,Simple denominator/mix diagnostic; full mix-standardization requires stable segment-level monthly denominators.

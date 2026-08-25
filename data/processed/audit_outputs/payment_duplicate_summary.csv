@@ -1,0 +1,2 @@
+raw_payment_rows,exact_duplicate_rows,duplicate_payment_id_rows,duplicate_payment_reference_rows,suspicious_business_event_rows,raw_successful_payment_amount,validated_successful_payment_amount,overstatement
+25500,972,1000,8424,1000,1341485926.33,1149682230.5,191803695.82999992

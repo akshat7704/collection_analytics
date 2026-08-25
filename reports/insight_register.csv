@@ -1,0 +1,5 @@
+insight_id,finding,evidence,classification,confidence,business_impact,recommended_action
+I001,"Validated successful recovery is INR 1,149,682,230, below raw successful recovery by INR 191,803,696.",payment_duplicate_summary.csv,FACT,HIGH,Prevents duplicate/invalid payment overstatement.,Use validated payments as recovery source of truth.
+I002,Latest independent MoM recovery-rate change is -74.67%; reported proxy change is -74.49%.,claim_validation.csv,STRONG EVIDENCE,MEDIUM,11% claim depends on metric definition and cleaning.,Report independent metric beside reported proxy.
+I003,WhatsApp/digital engagement ranks first by modeled evidence-adjusted ROI.,investment_option_scorecard.csv,HYPOTHESIS,MEDIUM,Potential allocation of INR 10 Cr.,Pilot before full rollout and collect cost/control data.
+I004,Client and language dimensions are unavailable in supplied data.,data_dictionary.csv and schema_audit.csv,FACT,HIGH,Cannot assess requested client/language drivers.,Add reliable client and language fields to source contracts.
